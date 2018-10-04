@@ -24,6 +24,7 @@ def draw_line(p1, p2):
         y = (1 - t) * p1[1] + t * p2[1]
 
 
+
 open_canvas(KPU_WIDTH, KPU_HEIGHT)
 kpu_ground = load_image('KPU_GROUND.png')
 character = load_image('animation_sheet.png')
@@ -33,7 +34,7 @@ x, y = random.randint(0, KPU_WIDTH), random.randint(0, KPU_HEIGHT)
 frame = 0
 LR = 1
 n = 1
-size = 20
+size = 10
 points = [(random.randint(0, KPU_WIDTH), random.randint(0, KPU_HEIGHT)) for i in range(size)]
 
 hide_cursor()
